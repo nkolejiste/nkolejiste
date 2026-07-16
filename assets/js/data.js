@@ -5,7 +5,7 @@ const locomotives = [
     title: "Řada 363.5",
     type: "elektricka",
     typeLabel: "Elektrická lokomotiva",
-    image: "assets/images/lokomotivy/363-5/hlavni.svg",
+    image: "assets/images/lokomotivy/363-5/363_5.jpg",
     shortDescription: "Modernizovaná dvousystémová lokomotiva určená především pro nákladní dopravu.",
     description: "Řada 363.5 představuje modernizovanou podobu československých dvousystémových lokomotiv. Spojuje tradiční koncepci s novější výzbrojí a v současném provozu je spojována především s nákladní dopravou.",
     stats: {
