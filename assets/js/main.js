@@ -1,0 +1,58 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("siteHeader");
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  const updateHeader = () => {
+    header?.classList.toggle("scrolled", window.scrollY > 24);
+  };
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+
+  menuToggle?.addEventListener("click", () => {
+    const open = mainNav.classList.toggle("open");
+    menuToggle.classList.toggle("active", open);
+    menuToggle.setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("menu-open", open);
+  });
+
+  mainNav?.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle?.classList.remove("active");
+      menuToggle?.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+    });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+
+  document.querySelectorAll("[data-current-year]").forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
+  const homeGrid = document.getElementById("homeLocoGrid");
+  if (homeGrid && typeof locomotives !== "undefined") {
+    homeGrid.innerHTML = locomotives.slice(0, 3).map(loco => `
+      <a class="home-loco-card reveal" href="lokomotivy.html#${loco.id}">
+        <img src="${loco.image}" alt="${loco.title}">
+        <div class="home-loco-content">
+          <span>${loco.typeLabel.toUpperCase()}</span>
+          <h3>${loco.name}</h3>
+        </div>
+      </a>
+    `).join("");
+
+    homeGrid.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+  }
+});

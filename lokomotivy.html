@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lokomotivy ve vozovém parku Vaškova kolejiště.">
+  <meta name="theme-color" content="#090b0d">
+  <title>Lokomotivy | Vaškovo kolejiště</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/lokomotivy.js" defer></script>
+</head>
+<body data-page="locomotives">
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html" aria-label="Vaškovo kolejiště – úvod">
+      <span class="brand-mark"></span>
+      <span>VAŠKOVO KOLEJIŠTĚ</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Hlavní navigace">
+      <a href="index.html">Úvod</a>
+      <a href="projekt.html">Projekt</a>
+      <a class="active" href="lokomotivy.html">Lokomotivy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero locomotive-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow reveal">VOZOVÝ PARK / 01</p>
+          <h1 class="page-title reveal">Lokomotivy.</h1>
+        </div>
+        <p class="page-intro reveal">
+          Elektrické a motorové stroje, které zajišťují provoz na kolejišti.
+          Každý model je zde představen jako jeho skutečná železniční předloha.
+        </p>
+      </div>
+    </section>
+
+    <section class="catalog-controls container">
+      <div class="filter-row" role="group" aria-label="Filtr lokomotiv">
+        <button class="filter-button active" data-filter="all">Všechny</button>
+        <button class="filter-button" data-filter="elektricka">Elektrické</button>
+        <button class="filter-button" data-filter="dieselova">Dieselové</button>
+      </div>
+      <p class="catalog-count"><span id="locoCount">0</span> lokomotivy</p>
+    </section>
+
+    <section class="locomotive-list container-wide" id="locomotiveList"></section>
+
+    <section class="next-page-panel">
+      <div class="container next-page-grid">
+        <div>
+          <p class="eyebrow">ZPĚT NA ZAČÁTEK</p>
+          <h2 class="section-title">Příběh kolejiště.</h2>
+        </div>
+        <a class="circle-link" href="index.html" aria-label="Přejít na úvod">↗</a>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="loco-dialog" id="locoDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Zavřít detail">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand"><span class="brand-mark"></span><span>VAŠKOVO KOLEJIŠTĚ</span></div>
+        <p>Digitální prezentace modelového kolejiště.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="projekt.html">Projekt</a>
+        <a href="lokomotivy.html">Lokomotivy</a>
+      </div>
+      <p class="copyright">© <span data-current-year></span> Vaškovo kolejiště</p>
+    </div>
+  </footer>
+</body>
+</html>
