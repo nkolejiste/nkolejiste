@@ -5,7 +5,7 @@ const locomotives = [
     title: "Řada 363.5",
     type: "elektricka",
     typeLabel: "Elektrická lokomotiva",
-    image: "assets/images/lokomotivy/363-5/363_5.jpg",
+    image: "assets/images/lokomotivy/363-5/363_526.jpg",
     shortDescription: "Modernizovaná dvousystémová lokomotiva určená především pro traťovou nákladní dopravu.",
     description: "Lokomotiva 363.526 v korporátním laku ČD Cargo slouží na modelovém kolejišti především k dopravování nákladních vlaků kategorie Pn a NEx mezi stanicemi Olomouc a Hranice.",
     stats: {
@@ -21,7 +21,7 @@ const locomotives = [
     title: "Řada 750",
     type: "dieselova",
     typeLabel: "Motorová lokomotiva",
-    image: "assets/images/lokomotivy/750/hlavni.svg",
+    image: "assets/images/lokomotivy/750/750_163.jpg",
     shortDescription: "Československá motorová lokomotiva známá charakteristickým tvarem čelních oken.",
     description: "Lokomotiva 750.163 v retro laku ČD Cargo slouží na modelovém kolejišti především jako 1. záloha ve stanici Olomouc. Její hlavní náplní práce je rozřazování vozů a sestavování vlaků.",
     stats: {
@@ -37,7 +37,7 @@ const locomotives = [
     title: "Řada 750",
     type: "dieselova",
     typeLabel: "Motorová lokomotiva",
-    image: "assets/images/lokomotivy/750/hlavni.svg",
+    image: "assets/images/lokomotivy/750/750_333.jpg",
     shortDescription: "Československá motorová lokomotiva známá charakteristickým tvarem čelních oken.",
     description: "Lokomotiva 750.333 v retro laku ČD Cargo slouží na modelovém kolejišti především jako 1. záloha ve stanici Olomouc. Její hlavní náplní práce je rozřazování vozů a sestavování vlaků.",
     stats: {
@@ -53,7 +53,7 @@ const locomotives = [
     title: "Řada 753.7",
     type: "dieselova",
     typeLabel: "Motorová lokomotiva",
-    image: "assets/images/lokomotivy/753-7/hlavni.svg",
+    image: "assets/images/lokomotivy/753-7/753_741.jpg",
     shortDescription: "Modernizovaná nákladní lokomotiva vycházející z legendární řady 753.",
     description: "Lokomotiva 753.741 v drobně odlišném korporátním laku ČD Cargo slouží na modelovém kolejišti především jako 3. záloha ve stanici Hranice. Její hlavní náplní práce je posun ve stanici Hranice a přísun vozů na místní rozsáhlou vlečku.",
     stats: {
@@ -69,7 +69,7 @@ const locomotives = [
     title: "Řada 753.7",
     type: "dieselova",
     typeLabel: "Motorová lokomotiva",
-    image: "assets/images/lokomotivy/753-7/hlavni.svg",
+    image: "assets/images/lokomotivy/753-7/753_776.jpg",
     shortDescription: "Modernizovaná nákladní lokomotiva vycházející z legendární řady 753.",
     description: "Lokomotiva 753.776 v korporátním laku ČD Cargo vykonává na modelovém kolejišti především posun s vozy na rozsáhlé vlečce v obvodu žst. Hranice.",
     stats: {
